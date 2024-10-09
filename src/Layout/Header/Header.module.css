@@ -1,0 +1,91 @@
+.header {
+  position: relative;
+  background-color: white;
+  width: 100%;
+  border-bottom: solid 1px var(--color-border);
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  cursor: pointer;
+  height: 30px;
+}
+.logo-ar {
+  cursor: pointer;
+  height: 50px;
+}
+.header-nav {
+  max-width: 1536px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigaton {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 300px;
+}
+.navigations-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.nav-right-container {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.signin {
+  cursor: pointer;
+  color: var(--color-text);
+  font-size: 17px;
+  font-weight: 600;
+  transition: all ease-in-out 0.3s;
+}
+.signin:hover {
+  color: var(--color-danger);
+  text-decoration: underline solid 1px var(--color-danger);  
+}
+.signup {
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 7px 30px;
+  border: solid 2px var(--color-danger);
+  border-radius: 25px;
+  color: var(--color-danger);
+  text-decoration: underline solid 2px white;  
+  transition: all ease-in-out 0.3s;
+}
+.signup:hover {
+  border: solid 2px var(--color-danger);
+  background-color: var(--color-danger);
+  border-radius: 25px;
+  color: white;
+}
+
+/*******/
+@media (min-width: 992px) {
+  .header {
+    width: 100%;
+    border-bottom: solid 1px var(--color-border);
+    height: 70px;
+    display: flex;
+    align-items: center;
+  }
+  .logo-ar {
+    height: 70px;
+  }
+  .navigaton {
+    display: flex;
+  }
+  .nav-right-container {
+    display: flex;
+  }
+}

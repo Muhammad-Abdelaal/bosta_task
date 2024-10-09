@@ -1,0 +1,56 @@
+.address-main-container {
+    margin: 30px auto;
+}
+.address-container {
+    width:100%;
+    max-width:410px;
+}
+.address-title {
+    color: var(--color-text);
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.address-details {
+    color: var(--color-text-light);
+    font-weight: 600;
+    font-size: 16px;
+    background-color: var(--color-background-dark);
+    padding: 20px;
+    border-bottom: solid 1px #cccccc76;
+}
+.address-issue-main-container {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:20px 10px;
+}
+.address-issue-title {
+    color: var(--color-text);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.address-issue-button {
+    cursor: pointer;
+    background-color: var(--color-danger);
+    border: solid 2px var(--color-danger);
+    color: white;
+    width: 100%;
+    padding: 7px 0px;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+}
+.address-issue-button:hover {
+    background-color: white;
+    color: var(--color-danger);
+    border: solid 2px var(--color-danger);
+
+}
+
+@media (min-width:992px) {
+    .address-container {
+        width:max-content;
+    }
+}

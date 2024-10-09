@@ -1,0 +1,36 @@
+.notfound-container {
+    margin: auto;
+    padding-top: 150px;
+    width: max-content;
+}
+.notfound-text-container {
+    position: relative;
+}
+.notfound-text-container::before {
+    content: '';
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    background-color: var(--color-danger);
+    z-index: -1;
+    bottom: -16px;
+    left: -20px;
+}
+.notfound-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    font-size: 72px;
+    font-weight: bold;
+    line-height: 72px;
+}
+.notfound-navlink {
+    display: block;
+    width: max-content;
+    margin: auto;
+    color: black;
+    border: solid 2px black ;
+    padding: 10px 16px;
+    margin-top: 50px;
+    text-decoration: none;
+}

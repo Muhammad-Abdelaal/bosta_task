@@ -1,0 +1,51 @@
+.navigation-item{
+    cursor: pointer;
+    color: var(--color-text);
+    font-size: 17px;
+    font-weight: 700;
+    border-bottom:solid 1px transparent;
+}
+.navigation-item:hover{
+    color: var(--color-danger);
+}
+.navigation-item:hover .navigation-item-icon{
+    color: var(--color-danger);
+    transform: rotate(270deg);
+}
+.navigation-item-icon{
+    margin-left: 5px;
+    font-size: 12px;
+    color: var(--color-text-light);
+}
+.nav-track-shipment{
+    cursor: pointer;
+    width: 130px;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--color-danger);
+}
+.nav-track-shipment:dir(ltr):hover .track-shipment-icon{
+    transform: rotate(270deg);
+}
+.nav-track-shipment:dir(rtl):hover .track-shipment-icon{
+    transform: rotate(-270deg);
+}
+.nav-search-container {
+    display: none;
+    position: fixed;
+    top: 50px !important;
+}
+.nav-item:hover .nav-search-container {
+    display: block;
+}
+.nav-search-container:hover .nav-search-container {
+    display: block;
+}
+@media(min-width:1214px) {
+    .nav-search-container {
+        top: 50px;
+    }
+}

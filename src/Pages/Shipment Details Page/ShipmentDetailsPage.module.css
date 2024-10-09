@@ -1,0 +1,7 @@
+
+@media (min-width:992px) {
+    .details-main-container {
+        display: flex;
+        gap: 30px;
+    }    
+}
